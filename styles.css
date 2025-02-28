@@ -1,0 +1,180 @@
+/* 
+  Gruvbox Dark-Inspired Portfolio Styles
+  --------------------------------------
+  Palette references (hex codes from Gruvbox-like theme):
+    --color-bg:      #1d2021;  (Dark background)
+    --color-bg-alt:  #282828;  (Slightly lighter dark)
+    --color-text:    #ebdbb2;  (Light beige)
+    --color-accent:  #458588;  (blue)
+    --color-accent2: #83a598;  (Soft blue)
+    --color-red:     #fb4934;  (Optional bright red)
+    --color-green:   #b8bb26;  (Optional bright green)
+    --color-yellow:  #fabd2f;  (Optional bright yellow)
+*/
+
+:root {
+    --color-bg:       #1d2021;
+    --color-bg-alt:   #282828;
+    --color-text:     #ebdbb2;
+    --color-accent:   #458588;
+    --color-accent2:  #83a598;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* GLOBAL STYLES */
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  /* HEADER / NAV */
+  .site-header {
+    background-color: var(--color-bg-alt);
+    padding: 1rem 0;
+    margin-bottom: 50px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--color-accent2);
+    transition: 0.2s;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background-color: var(--color-bg-alt);
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+  }
+  
+  .hero-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--color-text);
+  }
+  
+  /* BUTTONS */
+  .btn {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-accent2);
+    transition: 0.2s;
+  }
+  
+  .btn-secondary {
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    margin-top: 1rem;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+  }
+  
+  /* CONTENT SECTIONS */
+  .content-section {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+  }
+  
+  .content-section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* PROJECT CARDS */
+  .project-card {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-bg-alt);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    width: 300px;
+    object-fit: cover;
+    background-color: #111;
+  }
+  
+  .project-info {
+    padding: 1rem;
+  }
+  
+  .project-info h3 {
+    color: var(--color-accent2);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* FOOTER */
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-bg-alt);
+  }
+  
+  .site-footer p {
+    font-size: 0.875rem;
+    color: var(--color-text);
+  }
+  
